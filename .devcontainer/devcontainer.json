@@ -1,6 +1,6 @@
 {
   "name": "Personal Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "remoteUser": "vscode",
 
   "features": {
