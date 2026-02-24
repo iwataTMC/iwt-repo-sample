@@ -72,9 +72,6 @@ npx --no -- commitlint --edit "$1"
 EOF
 
 cat > .husky/pre-commit <<'EOF'
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 pre-commit run --hook-stage pre-commit
 EOF
 
