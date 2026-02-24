@@ -28,8 +28,12 @@ bash .devcontainer/post-create.sh
 
 ### 3. 日常の開発フロー
 
-1. 変更を加える
-2. ステージングする
+1. ブランチを切る  
+```bash
+git checkout -b feature/*****
+```
+2. 変更を加える
+3. ステージングする
 
 ```bash
 git add .
