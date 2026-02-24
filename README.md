@@ -1,6 +1,6 @@
-# iwt-repo-sample
+# Dev Container Sample Repository
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/iwataTMC/iwt-repo-sample)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/owner/repo)
 
 このリポジトリは、以下を前提にした開発・リリース運用のサンプルです。
 
@@ -13,6 +13,11 @@
 ### 1. Codespaces で起動する
 
 1. 上の **Open in GitHub Codespaces** から起動します。
+> [!IMPORTANT]
+> 適宜 `owner/repo` 部分は変更してください  
+> 例：`https://codespaces.new/iwataTMC/iwt-repo-sample`
+
+
 2. コンテナ初回起動時に `postCreateCommand` で `.devcontainer/post-create.sh` が実行されます。
 3. もし途中で失敗した場合は、ターミナルで次を実行してください。
 
