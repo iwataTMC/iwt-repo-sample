@@ -65,9 +65,6 @@ npx husky install
 mkdir -p .husky .github/workflows
 
 cat > .husky/commit-msg <<'EOF'
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 npx --no -- commitlint --edit "$1"
 EOF
 
