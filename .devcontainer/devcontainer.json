@@ -24,29 +24,7 @@
         "gruntfuggly.todo-tree",
         "redhat.vscode-yaml",
         "hashicorp.terraform"
-      ],
-      "settings": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": "explicit"
-        },
-        "[terraform]": {
-          "editor.defaultFormatter": "hashicorp.terraform",
-          "editor.formatOnSave": true
-        },
-        "todo-tree.tree.showScanModeButton": true,
-        "todo-tree.highlights.defaultHighlight": {
-        "gutterIcon": true, // 行番号の横にアイコンを表示
-        "type": "tag"       // タグ自体をハイライト
-        },
-        "todo-tree.general.tags": [
-            "TODO",
-            "FIXME",
-            "BUG",
-            "REFACTOR"
-        ]
-      }
+      ]
     }
   },
 
