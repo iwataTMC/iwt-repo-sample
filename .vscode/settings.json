@@ -1,0 +1,53 @@
+{
+  // --- 基本的なエディタ設定 ---
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.guides.bracketPairs": true,
+  "files.insertFinalNewline": true, // ファイル末尾に必ず改行を入れる（POSIX標準）
+  "files.trimTrailingWhitespace": true, // 行末の不要なスペースを自動削除
+
+  // --- 保存時の自動フォーマット (Prettier必須) ---
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // --- 言語ごとの個別設定 ---
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // --- ツール連携を便利にする設定 ---
+  // GitLensでコミット履歴をより詳細に見る
+  "gitlens.codeLens.enabled": true,
+
+  // Todo Tree の強調設定（今回おすすめした拡張機能用）
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true,
+    "type": "text"
+  },
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "DEBUG",
+    "REFACTOR"
+  ],
+
+  // --- 隠しファイル表示設定 ---
+  "files.exclude": {
+    "**/.git": false, // .gitフォルダは見えるようにしておくと便利な時がある
+    "**/node_modules": true
+  }
+}
