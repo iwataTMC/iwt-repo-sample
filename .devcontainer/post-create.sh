@@ -172,6 +172,8 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      HUSKY: 0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
