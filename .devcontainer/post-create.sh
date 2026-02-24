@@ -74,8 +74,13 @@ git config core.hooksPath .husky
 if ! command -v pre-commit >/dev/null 2>&1; then
   if command -v pipx >/dev/null 2>&1; then
     pipx install pre-commit
-  else
+  elif command -v uv >/dev/null 2>&1; then
+    uv tool install pre-commit
+  elif python3 -m pip --version >/dev/null 2>&1; then
     python3 -m pip install --user pre-commit
+  else
+    echo "Error: could not install pre-commit (pipx/uv/pip not available)." >&2
+    exit 1
   fi
 fi
 
